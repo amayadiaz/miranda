@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './media.css';
 
-class Media extends React.Component {
+class Media extends React.PureComponent {
 
     state = {
         // img: 'https://assets.hardwarezone.com/img/2013/09/RUSH_poster.jpg',
