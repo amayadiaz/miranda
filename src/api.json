@@ -1,0 +1,22 @@
+{   
+   "playlist": [ 
+        {
+            "id": 1,
+            "img": "https://assets.hardwarezone.com/img/2013/09/RUSH_poster.jpg",
+            "title": "Rush",
+            "trailer": "https://www.youtube.com/watch?v=4XA73ni9eVs"
+        },
+        {
+            "id": 2,
+            "img": "https://i.pinimg.com/originals/d5/86/77/d58677de7d7f64d820bfa646a78d95df.jpg",
+            "title": "Bohemian Rhapsody",
+            "trailer": "https://www.youtube.com/watch?v=mP0VHJYFOAU"
+        },
+        {
+            "id": 3,
+            "img": "https://images-na.ssl-images-amazon.com/images/I/81f8kjZI2tL._RI_.jpg",
+            "title": "Spotlight",
+            "trailer": "https://www.youtube.com/watch?v=EwdCIpbTN5g"
+        }
+    ]
+}
