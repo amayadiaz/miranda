@@ -9,9 +9,11 @@ class Media extends React.Component {
     }
 
     handleClick = () =>{
+
         /*this.setState({
             img: 'https://m.media-amazon.com/images/M/MV5BNjEyZGEyNDUtMTRlNS00ZTZiLWE3M2ItNWJkYjhhZDk3NzNhXkEyXkFqcGdeQXVyNTc3MjUzNTI@._V1_SY1000_CR0,0,701,1000_AL_.jpg',
         });*/
+
     }
 
     render(){
@@ -21,8 +23,8 @@ class Media extends React.Component {
                     <img src={this.props.img} className="img"></img>
                 </div>
                 <div className="information">
-                    <h3 className="title">{this.props.title}</h3>
-                    <a href={this.props.trailer} className="trailer" target="_blank"><span className="text">Watch Trailer</span><i className="fa fa-play icon" aria-hidden="true"></i></a>
+                    <p className="title">{this.props.title}<i className="fa fa-star icon" aria-hidden="true"></i></p>
+                    <a href={this.props.trailer} className="trailer" target="_blank"><i className="fa fa-play icon" aria-hidden="true"></i><span className="text">Watch Trailer</span></a>
                 </div>
             </div>
         );
