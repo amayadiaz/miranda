@@ -1,36 +1,78 @@
 {   
-   "playlist": [ 
 
+   "categories" : [
         {
             "id": 1,
-            "img": "https://assets.hardwarezone.com/img/2013/09/RUSH_poster.jpg",
-            "title": "8.1",
-            "trailer": "https://www.youtube.com/watch?v=4XA73ni9eVs"
+            "name": "Netflix Series",
+            "playlist": [
+                {
+                    "id": 1,
+                    "img": "https://mx.web.img3.acsta.net/r_1280_720/pictures/15/11/20/12/38/108906.jpg",
+                    "title": "8.8",
+                    "trailer": "https://www.youtube.com/watch?v=4XA73ni9eVs"
+                },
+                {
+                    "id": 2,
+                    "img": "http://de.web.img3.acsta.net/r_1280_720/pictures/16/03/30/14/05/596674.jpg",
+                    "title": "8.7",
+                    "trailer": "https://www.youtube.com/watch?v=mP0VHJYFOAU"
+                },
+                {
+                    "id": 3,
+                    "img": "https://i.imgur.com/3fYTCsh.jpg",
+                    "title": "8.6",
+                    "trailer": "https://www.youtube.com/watch?v=EwdCIpbTN5g"
+                },
+                {
+                    "id": 4,
+                    "img": "https://occ-0-2568-2567.1.nflxso.net/art/fc494/ddae969021f16d654326082e12e6b2ba5adfc494.jpg",
+                    "title": "8.0",
+                    "trailer": "https://www.youtube.com/watch?v=iszwuX1AK6A"
+                },
+                {
+                    "id": 5,
+                    "img": "https://occ-0-1009-999.1.nflxso.net/art/7559f/4aef755ad4ce4e763cf33b42a9781f7d4fc7559f.jpg",
+                    "title": "8.6",
+                    "trailer": "https://www.youtube.com/watch?v=sY1S34973zA"
+                }
+            ]
         },
         {
-            "id": 2,
-            "img": "https://i.pinimg.com/originals/d5/86/77/d58677de7d7f64d820bfa646a78d95df.jpg",
-            "title": "8.4",
-            "trailer": "https://www.youtube.com/watch?v=mP0VHJYFOAU"
-        },
-        {
-            "id": 3,
-            "img": "https://images-na.ssl-images-amazon.com/images/I/81f8kjZI2tL._RI_.jpg",
-            "title": "8.1",
-            "trailer": "https://www.youtube.com/watch?v=EwdCIpbTN5g"
-        },
-        {
-            "id": 4,
-            "img": "https://cdn.shopify.com/s/files/1/0747/3829/products/mHP0138_1024x1024.jpeg",
-            "title": "8.2",
-            "trailer": "https://www.youtube.com/watch?v=iszwuX1AK6A"
-        },
-        {
-            "id": 5,
-            "img": "https://m.media-amazon.com/images/M/MV5BM2MyNjYxNmUtYTAwNi00MTYxLWJmNWYtYzZlODY3ZTk3OTFlXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_.jpg",
-            "title": "9.2",
-            "trailer": "https://www.youtube.com/watch?v=sY1S34973zA"
+            "id": 2, 
+            "name": "HBO Series",
+            "playlist": [
+                {
+                    "id": 1,
+                    "img": "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/7fd1cf22660685.5631657703d63.jpg",
+                    "title": "9.0",
+                    "trailer": "https://www.youtube.com/watch?v=4XA73ni9eVs"
+                },
+                {
+                    "id": 2,
+                    "img": "https://artf.ly/files/2015/09/PP32783-Game-of-Thrones-crown.jpg",
+                    "title": "9.5",
+                    "trailer": "https://www.youtube.com/watch?v=mP0VHJYFOAU"
+                },
+                {
+                    "id": 3,
+                    "img": "http://posterposse.com/wp-content/uploads/2016/12/Screen-Shot-2016-12-05-at-9.53.19-AM.png",
+                    "title": "8.8",
+                    "trailer": "https://www.youtube.com/watch?v=EwdCIpbTN5g"
+                },
+                {
+                    "id": 4,
+                    "img": "http://br.web.img3.acsta.net/pictures/14/03/05/18/02/574226.jpg",
+                    "title": "8.6",
+                    "trailer": "https://www.youtube.com/watch?v=iszwuX1AK6A"
+                },
+                {
+                    "id": 5,
+                    "img": "https://ih0.redbubble.net/image.402964186.1875/flat,550x550,075,f.u1.jpg",
+                    "title": "9.2",
+                    "trailer": "https://www.youtube.com/watch?v=sY1S34973zA"
+                }
+            ]
         }
-        
-    ]
+
+   ] 
 }
