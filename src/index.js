@@ -4,5 +4,7 @@ import Miranda from './miranda.js';
 import data from './api.json';
 import './index.css';
 
-ReactDOM.render(<Miranda data={data} />, document.getElementById('root')); 
+const homeContainer = document.getElementById('miranda');
+
+ReactDOM.render(<Miranda data={data} />, homeContainer); 
 
