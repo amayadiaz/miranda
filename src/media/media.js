@@ -18,13 +18,13 @@ class Media extends React.PureComponent {
 
     render(){
         return (
-            <div className="movie" onClick={this.handleClick}>
+            <div className="Media" onClick={this.handleClick}>
                 <div className="cover">
-                    <img src={this.props.img} className="img"></img>
+                    <img className="img" src={this.props.img} ></img>
                 </div>
                 <div className="information">
-                    <p className="title">{this.props.title}<i className="fa fa-star icon" aria-hidden="true"></i></p>
-                    <a href={this.props.trailer} className="trailer" target="_blank"><i className="fa fa-play icon" aria-hidden="true"></i><span className="text">Watch Trailer</span></a>
+                    <p className="score">{this.props.title}<i className="fa fa-star icon" aria-hidden="true"></i></p>
+                    <a className="trailer" href={this.props.trailer}  target="_blank"><i className="fa fa-play icon" aria-hidden="true"></i><span className="text">Watch Trailer</span></a>
                 </div>
             </div>
         );

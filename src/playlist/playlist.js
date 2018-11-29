@@ -4,8 +4,6 @@ import Media from '../media/media.js';
 
 function Playlist(props) {
     
-    // const playlist = props.data.playlist;
-    
     return(
         <div className="Playlist">
             {

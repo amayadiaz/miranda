@@ -1,10 +1,10 @@
 import React from 'react';
-import Playlist from '../../playlist/playlist';
+import Playlist from '../playlist/playlist';
 import './category.css';
 
 function Category(props) {
     return(
-        <div>
+        <div className="Category">
             <h2 className="title">{props.name}</h2>
             <Playlist playlist={props.playlist} />
         </div>

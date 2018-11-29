@@ -3,7 +3,7 @@ import './menu.css';
 
 function Menu(props) {
     return(
-        <div className="menu">
+        <div className="Menu">
             <h1 className="title">Miranda Trailers</h1>
         </div>
     )
