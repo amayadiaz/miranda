@@ -5,6 +5,7 @@ import Menu from '../menu/menu.js';
 import ModalContainer from '../modal/modalContainer.js';
 import Modal from '../modal/modal.js';
 import ErrorContainer from '../error/errorContainer.js';
+import VideoPlayerContainer from '../player/videoPlayerContainer';
 
 
 
@@ -37,7 +38,7 @@ class HomeContainer extends React.Component{
                         this.state.modalVisible &&
                         <ModalContainer>
                             <Modal handleClick={this.handleCloseModal}>
-                                <h1>Esto es un portal</h1>
+                                <VideoPlayerContainer />
                             </Modal>
                         </ModalContainer>
                     }
