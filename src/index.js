@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Miranda from './miranda.js';
+import HomeContainer from './home/homeContainer.js';
 import data from './api.json';
 import './index.css';
 
-const homeContainer = document.getElementById('miranda');
+const homeDiv = document.getElementById('miranda');
 
-ReactDOM.render(<Miranda data={data} />, homeContainer); 
+ReactDOM.render(<HomeContainer data={data} />, homeDiv); 
 

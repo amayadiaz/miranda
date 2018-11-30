@@ -1,14 +1,14 @@
 import React from 'react';
-import Home from './home/home.js';
-import Categories from './categories/categories.js';
-import Menu from './menu/menu.js';
-import ModalContainer from './modal/modalContainer.js';
-import Modal from './modal/modal.js';
-import ErrorContainer from './error/errorContainer.js';
+import Home from './home.js';
+import Categories from '../categories/categories.js';
+import Menu from '../menu/menu.js';
+import ModalContainer from '../modal/modalContainer.js';
+import Modal from '../modal/modal.js';
+import ErrorContainer from '../error/errorContainer.js';
 
 
 
-class Miranda extends React.Component{
+class HomeContainer extends React.Component{
 
     state = {
         modalVisible: false,
@@ -48,4 +48,4 @@ class Miranda extends React.Component{
     }
 }
 
-export default Miranda
+export default HomeContainer
