@@ -6,6 +6,7 @@ import ModalContainer from '../modal/modalContainer.js';
 import Modal from '../modal/modal.js';
 import ErrorContainer from '../error/errorContainer.js';
 import VideoPlayerContainer from '../player/videoPlayerContainer';
+import Playlist from '../playlist/playlist.js';
 
 
 
@@ -33,12 +34,12 @@ class HomeContainer extends React.Component{
             <ErrorContainer>
                 <Home> 
                     <Menu />
-                    <Categories handleOpenModal={this.handleOpenModal} categories={this.props.data.categories} />
+                    <Playlist handleOpenModal={this.handleOpenModal} playlist={this.props.data.playlist} />
                     {
                         this.state.modalVisible &&
                         <ModalContainer>
                             <Modal handleClick={this.handleCloseModal}>
-                                <VideoPlayerContainer />
+                                <VideoPlayerContainer autoplay />
                             </Modal>
                         </ModalContainer>
                     }

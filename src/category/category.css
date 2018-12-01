@@ -1,6 +1,7 @@
-.Category .title {
-  color: #FFFF;
-  margin-left: 15px;
+.Category{
+  float: right;
+  font-size: 15px;
+  margin-right: 10px;
+  margin-top: 14px;
+  max-width: 200px;
 }
-
-/*# sourceMappingURL=category.css.map */

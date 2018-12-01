@@ -12,16 +12,24 @@ class VideoPlayerContainer extends React.Component {
 
     togglePlay = (event) => {
         this.setState({
-            pause: !this.state.pause,
+            pause: (!this.state.pause)
         })
     }
+
+    componentDidMount(){
+        this.setState({
+            pause: (!this.props.autoplay)
+        })
+    }
+
+
 
     render(){
         return(
             <VideoPlayer>
                 <Title title="Rush - Trailer" />
                 <PlayPause pause={this.state.pause} handleClick={this.togglePlay} />
-                <Video autoplay={true} src={require('../resources/videos/trailer.mp4')}  />
+                <Video autoplay={this.props.autoplay} pause={this.state.pause} src={require('../resources/videos/trailer.mp4')}  />
             </VideoPlayer>
         )
     }

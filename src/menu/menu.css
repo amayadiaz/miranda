@@ -6,9 +6,9 @@
 }
 .Menu .title {
   color: #FFFF;
-  text-align: center;
-  font-size: 30px;
-  margin: 15px 0px;
+  font-size: 20px;
+  margin: 15px 0px 15px 10px;
+  display: inline-block;
 }
 
 /*# sourceMappingURL=menu.css.map */
