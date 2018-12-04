@@ -3,6 +3,8 @@ import VideoPlayer from './videoPlayer.js';
 import Video from './video.js';
 import Title from './title.js';
 import PlayPause from './playPause.js';
+import Timer from './timer.js';
+import Controls from './controls.js';
 
 class VideoPlayerContainer extends React.Component {
     
@@ -22,14 +24,22 @@ class VideoPlayerContainer extends React.Component {
         })
     }
 
-
+    handleLoadedMetadata = event =>{
+        this.video = event.target;
+        this.setState ({
+            duration: this.video.duration
+        })
+    }
 
     render(){
         return(
             <VideoPlayer>
                 <Title title="Rush - Trailer" />
-                <PlayPause pause={this.state.pause} handleClick={this.togglePlay} />
-                <Video autoplay={this.props.autoplay} pause={this.state.pause} src={require('../resources/videos/trailer.mp4')}  />
+                <Controls>
+                    <PlayPause pause={this.state.pause} handleClick={this.togglePlay} />
+                    <Timer duration={this.state.duration} />
+                </Controls>
+                <Video autoplay={this.props.autoplay} pause={this.state.pause} src={require('../resources/videos/trailer.mp4')} handleLoadedMetadata={this.handleLoadedMetadata}  />
             </VideoPlayer>
         )
     }
