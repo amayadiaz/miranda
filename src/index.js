@@ -6,5 +6,6 @@ import './index.css';
 
 const homeDiv = document.getElementById('miranda');
 
+
 ReactDOM.render(<HomeContainer data={data} />, homeDiv); 
 

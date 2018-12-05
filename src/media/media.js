@@ -8,10 +8,10 @@ class Media extends React.PureComponent {
         return (
             <div className="Media">
                 <div className="cover">
-                    <img className="img" src={this.props.img} ></img>
+                    <img className="img" src={"https://image.tmdb.org/t/p/original"+ this.props.poster_path} ></img>
                 </div>
                 <div className="information">
-                    <p className="score">{this.props.title}<i className="fa fa-star icon" aria-hidden="true"></i></p>
+                    <p className="score">{this.props.vote_average}<i className="fa fa-star icon" aria-hidden="true"></i></p>
                     <a className="trailer" onClick={this.props.handleClick} target="_blank"><i className="fa fa-play icon" aria-hidden="true"></i><span className="text">Watch Trailer</span></a>
                 </div>
             </div>
@@ -22,7 +22,7 @@ class Media extends React.PureComponent {
 Media.propTypes = {
     image: PropTypes.string,
     title: PropTypes.string,
-    trailer: PropTypes.string.isRequired 
+    trailer: PropTypes.string
 }
 
 export default Media; 

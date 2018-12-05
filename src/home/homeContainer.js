@@ -11,12 +11,19 @@ import Playlist from '../playlist/playlist.js';
 
 class HomeContainer extends React.Component{
 
-    state = {
-        modalVisible: false,
-        handleError: false
+    constructor(props) {
+        super(props);
+    
+        this.state = {
+          movies: [],
+          videos: [],
+        };
+
+        this.getData = this.getData.bind(this);
+
     }
 
-    getData = () => {
+    getData(){
         const key = '84ff3251498b1fa0b9f22832083b3196';
 
         fetch('https://api.themoviedb.org/3/trending/movie/week?api_key=' + key)
@@ -28,18 +35,16 @@ class HomeContainer extends React.Component{
             }
     
             response.json().then(data => {
-              const movie = data;
-
-              movie.results.forEach(element => {
-                  console.log(element.title);
+            
+              this.setState({ 
+                movies : data.results,
               });
               
+              
             });
-
-        
-            
             
         })
+
     }
 
     componentDidMount() {
@@ -63,7 +68,7 @@ class HomeContainer extends React.Component{
             <ErrorContainer>
                 <Home> 
                     <Menu />
-                    <Playlist handleOpenModal={this.handleOpenModal} playlist={this.props.data.playlist} />
+                    <Playlist handleOpenModal={this.handleOpenModal} playlist={this.state.movies} />
                     {
                         this.state.modalVisible &&
                         <ModalContainer>
