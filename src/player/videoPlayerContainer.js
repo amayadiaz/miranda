@@ -29,17 +29,18 @@ class VideoPlayerContainer extends React.Component {
         this.setState ({
             duration: this.video.duration
         })
+        
     }
 
     render(){
         return(
             <VideoPlayer>
-                <Title title="Rush - Trailer" />
+                {/*<Title title="Rush - Trailer" />
                 <Controls>
                     <PlayPause pause={this.state.pause} handleClick={this.togglePlay} />
                     <Timer duration={this.state.duration} />
-                </Controls>
-                <Video autoplay={this.props.autoplay} pause={this.state.pause} src={require('../resources/videos/trailer.mp4')} handleLoadedMetadata={this.handleLoadedMetadata}  />
+                </Controls>*/}
+                <Video autoplay={this.props.autoplay} pause={this.state.pause} src={this.props.video} handleLoadedMetadata={this.handleLoadedMetadata}  />
             </VideoPlayer>
         )
     }

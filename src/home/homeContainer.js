@@ -16,7 +16,8 @@ class HomeContainer extends React.Component{
     
         this.state = {
           movies: [],
-          videos: [],
+          video: '',
+
         };
 
         this.getData = this.getData.bind(this);
@@ -25,8 +26,9 @@ class HomeContainer extends React.Component{
 
     getData(){
         const key = '84ff3251498b1fa0b9f22832083b3196';
+        const index = 0;
 
-        fetch('https://api.themoviedb.org/3/trending/movie/week?api_key=' + key)
+        fetch('https://api.themoviedb.org/3/trending/movie/week?api_key=' + key )
         .then(response => {
 
             if (response.status !== 200) {
@@ -35,11 +37,10 @@ class HomeContainer extends React.Component{
             }
     
             response.json().then(data => {
-            
+
               this.setState({ 
                 movies : data.results,
               });
-              
               
             });
             
@@ -51,10 +52,20 @@ class HomeContainer extends React.Component{
         this.getData();
     }
 
-    handleOpenModal = () => {
-        this.setState({
-            modalVisible: true,
-        })
+    handleOpenModal = (event) => {
+
+        fetch('https://api.themoviedb.org/3/movie/' + event.target.id + '/videos?api_key=84ff3251498b1fa0b9f22832083b3196' )
+                .then(response2 => {
+                    response2.json().then(videos => {
+                        this.setState({
+                            modalVisible: true,
+                            video: videos.results[0].key,
+                        })
+                        
+                    })
+                })
+        
+        
     }
 
     handleCloseModal = (event) =>{
@@ -73,7 +84,7 @@ class HomeContainer extends React.Component{
                         this.state.modalVisible &&
                         <ModalContainer>
                             <Modal handleClick={this.handleCloseModal}>
-                                <VideoPlayerContainer autoplay />
+                                <VideoPlayerContainer video={this.state.video} />
                             </Modal>
                         </ModalContainer>
                     }

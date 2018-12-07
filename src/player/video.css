@@ -1,7 +1,8 @@
 .Video{
     width: inherit;
 }
-.Video video{
+.Video iframe{
     width: inherit;
     vertical-align: middle;
+    height: 400px;
 }

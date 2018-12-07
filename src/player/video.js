@@ -27,7 +27,7 @@ class Video extends React.Component{
 
         return (
             <div className="Video">
-                <video ref={this.setRef} autoPlay={this.props.autoplay} src={this.props.src} onLoadedMetadata={handleLoadedMetadata}></video>
+                <iframe  src={"https://www.youtube.com/embed/"+this.props.src+'?autoplay=1&mute=1'} frameBorder="0" allowFullScreen></iframe>
             </div>
         )
     }

@@ -3,9 +3,6 @@ import Media from '../media/media.js';
 
 
 function Playlist(props) {
-
-    console.log(props.playlist);
-    
     
     return(
         <div className="Playlist">
