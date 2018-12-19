@@ -22,6 +22,8 @@ class HomeContainer extends React.Component{
 
         this.getData = this.getData.bind(this);
 
+        this.handleOpenModal = this.handleOpenModal.bind(this);
+
     }
 
     getData(){
@@ -52,9 +54,10 @@ class HomeContainer extends React.Component{
         this.getData();
     }
 
-    handleOpenModal = (event) => {
+    handleOpenModal = (id, e) => {
+        console.log(id);
 
-        fetch('https://api.themoviedb.org/3/movie/' + event.target.id + '/videos?api_key=84ff3251498b1fa0b9f22832083b3196' )
+        fetch('https://api.themoviedb.org/3/movie/' + id + '/videos?api_key=84ff3251498b1fa0b9f22832083b3196' )
                 .then(response2 => {
                     response2.json().then(videos => {
                         this.setState({

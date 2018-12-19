@@ -12,7 +12,7 @@ class Media extends React.PureComponent {
                 </div>
                 <div className="information">
                     <p className="score">{this.props.vote_average}<i className="fa fa-star icon" aria-hidden="true"></i></p>
-                    <a className="trailer" onClick={this.props.handleClick} target="_blank"><i className="fa fa-play icon" aria-hidden="true"></i><span id={this.props.id} className="text">Watch Trailer</span></a>
+                    <a className="trailer" onClick={(e) => this.props.handleClick(this.props.id, e)} target="_blank" id={this.props.id}><i className="fa fa-play icon" aria-hidden="true"></i><span className="text">Watch Trailer</span></a>
                 </div>
             </div>
         );
